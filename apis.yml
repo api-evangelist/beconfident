@@ -1,8 +1,24 @@
 aid: beconfident
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/beconfident.png
 name: BeConfident
-description: 'BeConfident is a company surfaced as a portfolio company of prosus-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: health. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'BeConfident (Beconfident Inteligencia Artificial em Idiomas Ltda.) is an AI-powered English
+  language-learning platform that lets learners practice through real-time conversations with AI tutors
+  via text, voice, and video, plus guided 24/7 lessons, grammar and pronunciation feedback, and study
+  plans tailored to proficiency level, with access across web, WhatsApp, and smartwatch. It is a
+  consumer EdTech application backed by Prosus Ventures and operating primarily in the Brazilian
+  (Portuguese) market. As of this enrichment pass the company publishes no public API, developer
+  portal, or documentation surface, so this profile is identity-only.'
 url: https://raw.githubusercontent.com/api-evangelist/beconfident/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Health
+- EdTech
+- Language Learning
+- Artificial Intelligence
+- Education
+- English
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beconfident-domain-security.yml
 - type: Website
   url: https://beconfident.app
+- type: SignUp
+  url: https://invite.beconfident.app/teste-gratuito-site-beconfident
+- type: Support
+  url: https://link.beconfident.app/pt-BR/support
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
